@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serviços Pet</title>
+  <link rel="stylesheet" href="servicos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Serviços do Pet-Shop</h1>
+  </header>
+
+  <main>
+    <section class="pet-profile" aria-label="Perfil do pet destacado">
+      <img src="img05.webp" alt="Foto do Rex, um pug" class="pet-photo" />
+      <div class="pet-info">
+        <h2>Rex</h2>
+        <p>Raça: Pug</p>
+        <div class="stars" aria-label="Avaliação: 4 de 5 estrelas">⭐️⭐️⭐️⭐️☆</div>
+        <p class="description">Rex é um cão alegre, adora brincar com água e é super sociável com outros pets.</p>
+      </div>
+      <div class="service-options" role="group" aria-label="Opções de serviços para Rex">
+        <button type="button" aria-label="Banho para Rex">🛁 Banho</button>
+        <button type="button" aria-label="Tosa para Rex">✂️ Tosa</button>
+        <button type="button" aria-label="Corte de unhas para Rex">🐾 Unhas</button>
+        <button type="button" aria-label="Higiene para Rex">🧼 Higiene</button>
+      </div>
+      <div class="schedule">
+        <button class="agendar" type="button" aria-label="Agendar visita para Rex">📅 Agendar Visita</button>
+      </div>
+    </section>
+
+    <section class="pet-gallery" aria-label="Galeria de pets">
+      <article class="pet-card">
+        <img src="img04.jpg" alt="Rex, Golden Retriever" class="pet-photo" />
+        <h3>Rex</h3>
+        <p>Raça: Golden Retriever</p>
+        <p class="description">Alegre, brincalhão e ama água!</p>
+        <div class="stars" aria-label="Avaliação: 4 de 5 estrelas">⭐️⭐️⭐️⭐️☆</div>
+        <button class="agendar" type="button" aria-label="Agendar visita para Rex Golden Retriever">📅 Agendar Visita</button>
+      </article>
+
+      <article class="pet-card">
+        <img src="img01.jpg" alt="Luna, Gato Persa" class="pet-photo" />
+        <h3>Luna</h3>
+        <p>Raça: Gato Persa</p>
+        <p class="description">Calma, carinhosa e adora colo.</p>
+        <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">⭐️⭐️⭐️⭐️⭐️</div>
+        <button class="agendar" type="button" aria-label="Agendar visita para Luna">📅 Agendar Visita</button>
+      </article>
+
+      <article class="pet-card">
+        <img src="img02.jpg" alt="Thor, Husky Siberiano" class="pet-photo" />
+        <h3>Thor</h3>
+        <p>Raça: Husky Siberiano</p>
+        <p class="description">Cheio de energia e muito esperto.</p>
+        <div class="stars" aria-label="Avaliação: 4 de 5 estrelas">⭐️⭐️⭐️⭐️☆</div>
+        <button class="agendar" type="button" aria-label="Agendar visita para Thor">📅 Agendar Visita</button>
+      </article>
+
+      <article class="pet-card">
+        <img src="img03.jpg" alt="Mimi, Siamês" class="pet-photo" />
+        <h3>Mimi</h3>
+        <p>Raça: Siamês</p>
+        <p class="description">Curiosa e muito charmosa.</p>
+        <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">⭐️⭐️⭐️⭐️⭐️</div>
+        <button class="agendar" type="button" aria-label="Agendar visita para Mimi">📅 Agendar Visita</button>
+      </article>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navegação principal">
+    <a href="#" aria-label="Página inicial">🏠</a>
+    <a href="#" aria-label="Pesquisar">🔍</a>
+    <a href="#" aria-label="Adicionar novo">➕</a>
+    <a href="#" aria-label="Notificações">🔔</a>
+    <a href="#" aria-label="Perfil do usuário">👤</a>
+  </nav>
+
+  <script>
+   
+    document.querySelectorAll('.agendar').forEach(button => {
+      button.addEventListener('click', () => {
+        alert('Obrigado por agendar uma visita! Entraremos em contato em breve.');
+      });
+    });
+  </script>
+</body>
+</html>
